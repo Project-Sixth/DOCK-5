@@ -2,7 +2,7 @@
 
 software_name=Vanilla-Minecraft-Server
 container_name=minecraft
-image_name=theprojectsixth/minecraft-server:1.12.2
+image_name=theprojectsix/minecraft-server:1.12.2
 
 case $1 in
     start)

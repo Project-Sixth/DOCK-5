@@ -1,8 +1,9 @@
 #!/bin/bash
 
 software_name=Vanilla-Minecraft-Server
-container_name=minecraft
+container_name=minecraft-server
 image_name=theprojectsix/minecraft-server:1.12.2
+mount_dir=/srv/Minecraft
 
 case $1 in
     start)
@@ -34,7 +35,7 @@ case $1 in
         echo "I will create new $software_name"
         docker run \
         --name $container_name \
-        --volume /srv/Minecraft:/data \
+        --volume $mount_dir:/data \
         --publish 25565:25565 \
         --restart unless-stopped \
         --detach \

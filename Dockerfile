@@ -34,7 +34,7 @@ RUN { \
         echo 'echo eula=true > /data/eula.txt'; \
         echo ''; \
         echo '# fix permissions.'; \
-        echo 'chown -R minecraft:minecraft /app /data'; \
+        echo 'chown -R minecraft:minecraft /data'; \
         echo ''; \
         echo '# run server.'; \
         echo 'cd /data'; \

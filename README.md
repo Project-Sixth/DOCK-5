@@ -2,11 +2,11 @@
 Docker for Vanilla Minecraft Server, based on Debian Stretch (`debian:9`).
 Sadly, couldn't fit that to `debian:9-slim` for some reason.
 ## Fast start
- 1. `docker run --name minecraft-server --volume /srv/minecraft:/data --publish 25565:25565 --restart unless-stopped --detach theprojectsix/minecraft-server:1.12.2`
+  1. `docker run --name minecraft-server --volume /srv/minecraft:/data --publish 25565:25565 --restart unless-stopped --detach theprojectsix/minecraft-server:1.12.2`
    - *this will download all server files and run server once. if you want to attach to server console through docker attach, add two more flags - -i and -t*
- 2. `docker stop minecraft-server`
- 3. Configure as needed (manually)
- 4. `docker start minecraft-server`
+  2. `docker stop minecraft-server`
+  3. Configure as needed (manually)
+  4. `docker start minecraft-server`
 
 # Build/Run information
 ### Build Arguments
